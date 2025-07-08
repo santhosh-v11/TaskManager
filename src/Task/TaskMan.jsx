@@ -22,6 +22,10 @@ export default function TaskMan(){
     return( 
         
         <>  
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+       
             <div className='header-container'>
             <h2 className="task-manager-title">TaskManager</h2>
             <TaskIn addTask={addTask}/>

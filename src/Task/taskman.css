@@ -1,5 +1,5 @@
 /* ===== BASE STYLES ===== */
-body {
+/* body {
   background: 
     radial-gradient(circle at 10% 20%, 
       rgba(255, 255, 255, 0.8) 0%, 
@@ -11,8 +11,46 @@ body {
   margin: 0;
   padding: 20px;
   font-family: 'Segoe UI', system-ui, sans-serif;
+} */
+
+
+body {
+  margin:0;
 }
 
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
 /* ===== HEADER & TITLE ===== */
 .header-container {
   width: 100%;
@@ -22,7 +60,7 @@ body {
 }
 
 .task-manager-title {
-  color: #2541b2;
+  color: #1e11f0;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
