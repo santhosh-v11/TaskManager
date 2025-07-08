@@ -1,0 +1,7 @@
+/* Completed task styling */
+.task-text.completed {
+  color: #9fb1ca; /* Soft gray-blue */
+  /* text-decoration: line-through; */
+  opacity: 0.7;
+  font-style: italic;
+}
